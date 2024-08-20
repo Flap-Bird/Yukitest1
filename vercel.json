@@ -1,24 +1,15 @@
 {
-"version": 2,
-"builds": [
-{
-"src": "main.py",
-"use": "@vercel/python"
-}
-],
-"routes": [
-{
-"src": "/(.*)",
-"dest": "/main.py"
-}
-],
-"functions": {
-"api/watch": {
-"handler": "main.video"
-}
-},
-"web": {
-"command": "uvicorn main:app --port $PORT --host 0.0.0.0",
-"memory": 512
-}
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
 }
