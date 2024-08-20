@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: yuki-youtube-ztttas1-beta
+    name: digitalartscloud.com
     env: python
     region: Oregon
     plan: free
